@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#mensaje {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  pointer-events: none; /* Para que no interfiera con clics del canvas */
+  filter: blur(1px);
+          text-shadow: 
+        0 0 5px white,   /* brillo cercano */
+        0 0 10px white,  /* halo mediano */
+        0 0 30px white;
+    }
