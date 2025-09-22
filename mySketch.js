@@ -243,5 +243,10 @@ function updateGrid() {
   grid[(xVal + w) % w][(yVal + h) % h] = 2;
 }
 
+let t,reset=()=>{clearTimeout(t);t=setTimeout(()=>location.reload(),120000)};
+['click','keydown','scroll','mousemove','touchstart'].forEach(e=>addEventListener(e,reset));
+reset();
+
+
 
 
